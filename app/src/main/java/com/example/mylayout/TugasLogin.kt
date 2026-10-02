@@ -40,5 +40,14 @@ fun TataletakBoxColumnRow1(modifier: Modifier = Modifier) {
     val latar = painterResource(id = R.drawable.bg_image)
     val logo = painterResource(id = R.drawable.logo_umy)
     val gambar = painterResource(id = R.drawable.photoself)
-}
 
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .paint(painter = latar, contentScale = ContentScale.Crop)
+            .then(modifier)
+            .padding(top = 24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+    }
+}
