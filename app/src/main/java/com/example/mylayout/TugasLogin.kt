@@ -109,42 +109,7 @@ fun TataletakBoxColumnRow1(modifier: Modifier = Modifier) {
                         color = Color.Gray
                     )
                 }
-                Row(horizontalArrangement = Arrangement.Center) {
-                    Text(
-                        text = "Rara Andini Batrisyia",
-                        fontSize = 18.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = PinkTua
-                    )
-                }
-                Row(horizontalArrangement = Arrangement.Center) {
-                    Text(
-                        text = "20240140152",
-                        fontSize = 24.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = Pink40
-                    )
-                }
             }
-        }
-
-        Spacer(modifier = Modifier.height(10.dp))
-
-        Box(
-            modifier = Modifier.fillMaxWidth(),
-            contentAlignment = Alignment.Center
-        ) {
-            Image(
-                painter = gambar,
-                contentDescription = "Foto diri sendiri",
-                modifier = Modifier
-                    .size(290.dp)
-                    .clip(CircleShape)
-                    .background(PinkMuda)
-                    .border(width = 4.dp, color = PinkPucat, shape = CircleShape),
-                contentScale = ContentScale.Crop
-            )
         }
     }
 }
-
