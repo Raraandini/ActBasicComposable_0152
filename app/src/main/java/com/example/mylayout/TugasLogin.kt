@@ -35,3 +35,10 @@ private val PinkKrem = Color(0xFFFFF0F5)
 private val PinkMuda = Color(0xFFF48FB1)
 private val PinkPucat = Color(0xFFFCE4EC)
 
+@Composable
+fun TataletakBoxColumnRow1(modifier: Modifier = Modifier) {
+    val latar = painterResource(id = R.drawable.bg_image)
+    val logo = painterResource(id = R.drawable.logo_umy)
+    val gambar = painterResource(id = R.drawable.photoself)
+}
+
