@@ -65,8 +65,69 @@ fun TataletakBoxColumnRow1(modifier: Modifier = Modifier) {
                         color = Color.White
                     )
                 }
-
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.Center
+                ) {
+                    Text(
+                        text = "Selamat datang di halaman login,",
+                        fontSize = 14.sp,
+                        color = PinkMuda
+                    )
+                }
+                Spacer(modifier = Modifier.height(28.dp))
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.Center
+                ) {
+                    Image(
+                        painter = logo,
+                        contentDescription = "Foto diri kecil",
+                        modifier = Modifier
+                            .size(150.dp)
+                            .clip(CircleShape)
+                            .background(PinkTua)
+                            .border(width = 3.dp, color = PinkTua, shape = CircleShape),
+                        contentScale = ContentScale.Crop
+                    )
+                }
             }
         }
+
+        Spacer(modifier = Modifier.height(50.dp))
+
+        Box(
+            modifier = Modifier.fillMaxWidth(),
+            contentAlignment = Alignment.Center
+        ) {
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Row(horizontalArrangement = Arrangement.Center) {
+                    Text(
+                        text = "Nama",
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.Gray
+                    )
+                }
+                Row(horizontalArrangement = Arrangement.Center) {
+                    Text(
+                        text = "Rara Andini Batrisyia",
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = PinkTua
+                    )
+                }
+                Row(horizontalArrangement = Arrangement.Center) {
+                    Text(
+                        text = "20240140152",
+                        fontSize = 24.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Pink40
+                    )
+                }
+            }
+        }
+
     }
 }
+
