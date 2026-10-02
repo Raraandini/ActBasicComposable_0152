@@ -28,3 +28,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.mylayout.ui.theme.Pink40
 
+private val PinkTua = Color(0xFFC2185B)
+private val UnguAnggur = Color(0xFF4A1F3D)
+private val PinkEmas = Color(0xFFE8A0B4)
+private val PinkKrem = Color(0xFFFFF0F5)
+private val PinkMuda = Color(0xFFF48FB1)
+private val PinkPucat = Color(0xFFFCE4EC)
+
