@@ -108,8 +108,8 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(110.dp)
-                .background(color = Color.Yellow),
+                .height(1000.dp)
+                .background(color = Color.White),
             contentAlignment = Alignment.Center
         ) {
             Column() {
@@ -132,20 +132,19 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
             }
 
             Spacer(modifier = Modifier.height(10.dp))
-            // (Di bawah Spacer)
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(300.dp)
-                    .background(color = Color.Cyan),
+                    .height(500.dp)
+                    .background(color = Color.Black),
                 contentAlignment = Alignment.Center
             ) {
                 Image(painter = gambar,
                     contentDescription = null,
                     contentScale = ContentScale.Fit)
                 Text(text = "My Music",
-                    fontSize = 50.sp,
-                    color = Color.Red,
+                    fontSize = 40.sp,
+                    color = Color.Black,
                     fontWeight = FontWeight.Bold,
                     fontFamily = FontFamily.Cursive,
                     modifier = Modifier.align(
