@@ -87,7 +87,7 @@ fun TataletakBoxColumnRow1(modifier: Modifier = Modifier) {
                             .size(150.dp)
                             .clip(CircleShape)
                             .background(PinkTua)
-                            .border(width = 3.dp, color = PinkTua, shape = CircleShape),
+                            .border(width = 3.dp, color = PinkTua , shape = CircleShape),
                         contentScale = ContentScale.Crop
                     )
                 }
@@ -128,6 +128,23 @@ fun TataletakBoxColumnRow1(modifier: Modifier = Modifier) {
             }
         }
 
+        Spacer(modifier = Modifier.height(10.dp))
+
+        Box(
+            modifier = Modifier.fillMaxWidth(),
+            contentAlignment = Alignment.Center
+        ) {
+            Image(
+                painter = gambar,
+                contentDescription = "Foto diri sendiri",
+                modifier = Modifier
+                    .size(290.dp)
+                    .clip(CircleShape)
+                    .background(PinkMuda)
+                    .border(width = 4.dp, color = PinkPucat, shape = CircleShape),
+                contentScale = ContentScale.Crop
+            )
+        }
     }
 }
 
